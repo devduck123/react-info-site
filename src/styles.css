@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  background: rgb(46, 46, 46);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(34, 34, 34);
+  color: #61dbfb;
+  padding: 0 25% 0 25%;
+}
+
+.logo {
+  width: 100px;
+}
+
+.section-facts {
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 240px;
+  display: grid;
+  place-content: center;
+  color: white;
+}
+
+.section-facts > h1 {
+  font-size: 2.4rem;
+  margin: 10px;
+  padding: 1rem;
+}
+
+.section-facts > ul > li {
+  font-size: 1.2rem;
+  padding-block: 10px;
+}
+
+.section-facts > ul > li::marker {
+  color: #61dbfb;
+  font-size: 1.4rem;
+}
+
+footer {
+  position: fixed;
+  top: 90%;
+  right: 50%;
+}
